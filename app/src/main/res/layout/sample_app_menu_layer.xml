@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foreverappar.com.ui.SampleAppMenu.SampleAppMenuView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+	<ScrollView
+	    
+
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    
+	    >
+	          
+	    <LinearLayout 
+	    	android:id="@+id/settings_menu" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+	        >
+	        
+		    <TextView 
+			    android:id="@+id/settings_menu_title" 
+			    android:layout_width="match_parent"
+			    android:layout_height="65dp"
+			    android:gravity="center_horizontal"
+			    android:background="@drawable/settings_title"
+			    android:padding="@dimen/menu_title_padding"
+			    android:fontFamily="sans-serif"
+			    android:textStyle="bold"
+			    android:textSize="@dimen/menu_title"
+		        />
+		    
+	     </LinearLayout>
+	</ScrollView>
+
+</foreverappar.com.ui.SampleAppMenu.SampleAppMenuView>

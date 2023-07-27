@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="menu_title">20sp</dimen>
+    <dimen name="menu_title_padding">8sp</dimen>
+    <dimen name="menu_entries_text">8sp</dimen>
+    <dimen name="menu_entries_title">8sp</dimen>
+    <dimen name="menu_entries_sides_padding">8dp</dimen>
+    <dimen name="menu_entries_top_down_padding">8dp</dimen>
+    <dimen name="menu_entries_top_down_radio_padding">3dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_40dp">40</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+
+</resources>

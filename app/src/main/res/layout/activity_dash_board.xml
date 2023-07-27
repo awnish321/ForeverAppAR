@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="foreverappar.com.ui.ActivityList.DashBoardActivity"
+        tools:openDrawer="start">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            app:headerLayout="@layout/header"
+            app:itemIconTint="#2c6b74"
+            app:itemTextColor="#2c6b74"
+            app:menu="@menu/main_menu" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/Lnr_Bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/dashboardToolbar"
+                    layout="@layout/dash_toolbar" />
+
+                <TextView
+                    android:id="@+id/txtClassName"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/register_page_border_design"
+                    android:gravity="center"
+                    android:text="Subjects"
+                    android:textColor="@color/base_colour"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:horizontalSpacing="15dp"
+                    android:numColumns="2"
+                    android:scrollbars="none"
+                    android:verticalSpacing="15dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
