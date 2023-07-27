@@ -51,8 +51,7 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.splash_screen);
         cd = new ConnectionDetector(getApplicationContext());
 
@@ -130,8 +129,7 @@ public class SplashScreen extends Activity {
 
     private void GetDevicedetails() {
 
-        Device_Id = Settings.Secure.getString(getApplicationContext().getContentResolver(),
-                Settings.Secure.ANDROID_ID);
+        Device_Id = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
         Mob_Id = android.os.Build.ID;
         Mob_Product= android.os.Build.PRODUCT;
         Mob_Brand= android.os.Build.BRAND;
@@ -181,9 +179,7 @@ public class SplashScreen extends Activity {
                                     editor = preferences.edit();
                                     editor.clear();
                                     editor.commit();
-                                    Intent intent1 = new Intent(SplashScreen.this,
-                                            MainActivity.class);
-
+                                    Intent intent1 = new Intent(SplashScreen.this, MainActivity.class);
                                     startActivity(intent1);
                                     SplashScreen.this.finish();
                                 }

@@ -46,6 +46,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name="foreverappar.com.ui.ActivityList.MyProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="foreverappar.com.ui.ActivityList.ChapterVideoPlayBackActivity"
             android:exported="false" />
         <activity
